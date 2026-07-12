@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinicius &amp; Mariana — Chá de Casa Nova</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Caveat:wght@500;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+  <img class="hero-img" src="assets/hero.jpg" alt="Vinicius e Mariana sorrindo, de óculos escuros, com as montanhas ao fundo">
+  <div class="hero-scrim"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Chá de casa nova</div>
+    <h1 class="hero-names">Vinicius <span class="hero-amp">&amp;</span> Mariana</h1>
+    <p class="hero-sub">uma casa nova começa aqui — e queremos vocês nesse dia</p>
+  </div>
+  <div class="scroll-cue"><span>role</span><span class="line"></span></div>
+</section>
+
+<section class="intro reveal">
+  <p>Depois de trilhas, muitas conversas e uma vista que valeu cada subida, decidimos que é hora de montar a nossa própria casa. Achamos que um chá de casa nova era o jeito mais gostoso de comemorar esse começo — com quem a gente ama por perto, com comida boa, e com uma pitada de bagunça também.</p>
+  <p class="signoff">com muito carinho, Vinicius &amp; Mariana</p>
+</section>
+
+<section class="recipe-wrap reveal">
+  <div class="recipe-card">
+    <div class="recipe-head">
+      <div class="eyebrow recipe-eyebrow">a receita do dia</div>
+      <h2 class="recipe-title">Receita para uma casa nova</h2>
+    </div>
+    <div class="recipe-cols">
+      <div class="recipe-col">
+        <h3>Ingredientes</h3>
+        <ul class="ing-list">
+          <li>1 casal apaixonado (nós, no capricho)</li>
+          <li class="placeholder">Data: em breve 💛</li>
+          <li class="placeholder">Horário: em breve</li>
+          <li class="placeholder">Endereço: em breve</li>
+          <li>Uma pitada generosa de bom humor</li>
+          <li>Muito carinho de quem estiver por perto</li>
+        </ul>
+      </div>
+      <div class="recipe-divider"></div>
+      <div class="recipe-col">
+        <h3>Modo de preparo</h3>
+        <ol class="prep-list">
+          <li>Confirme sua presença logo abaixo, pelo WhatsApp</li>
+          <li>Dê uma olhada na nossa lista de presentes, pra ninguém repetir o mesmo presente</li>
+          <li>No dia combinado, é só chegar com vontade de comemorar com a gente</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery reveal">
+  <div class="eyebrow">registros</div>
+  <h2>de onde viemos até aqui</h2>
+  <p class="lead">Um pouco do caminho — entre montanhas, luz de fim de tarde e a vontade de construir algo nosso.</p>
+  <div class="gallery-grid">
+    <figure class="frame tall">
+      <img class="dip-img" src="assets/galeria-dip.jpg" alt="Vinicius e Mariana dançando, em um giro, em um jardim">
+      <figcaption>e ainda dançamos por aí</figcaption>
+    </figure>
+    <figure class="frame">
+      <img src="assets/galeria-1.jpg" alt="Vinicius e Mariana abraçados em um mirante nas montanhas">
+      <figcaption>lá do alto</figcaption>
+    </figure>
+    <figure class="frame right">
+      <img src="assets/galeria-2.jpg" alt="Selfie de Vinicius e Mariana no fim de tarde, com o céu ao fundo">
+      <figcaption>fim de tarde, sempre juntos</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="gifts reveal">
+  <div class="eyebrow">lista de presentes</div>
+  <h2>ajude a mobiliar essa cozinha</h2>
+  <p>Organizamos tudo na Amazon. Quando alguém marca um item como comprado, ele some da lista pros outros — assim ninguém compra o mesmo presente duas vezes sem querer.</p>
+  <a class="btn" href="https://www.amazon.com.br/hz/wishlist/ls/UZTMXAYRSNF3?type=wishlist" target="_blank" rel="noopener">Ver lista na Amazon ↗</a>
+</section>
+
+<section class="rsvp reveal" id="rsvp">
+  <div class="rsvp-inner">
+    <div class="eyebrow">presença</div>
+    <h2>confirme com a gente</h2>
+    <p>Preencha os campos abaixo — ao enviar, vamos abrir o WhatsApp com sua confirmação já escrita, prontinha pra você só apertar enviar.</p>
+
+    <div class="field">
+      <label for="rsvp-name">Seu nome</label>
+      <input type="text" id="rsvp-name" placeholder="Como podemos te chamar?">
+    </div>
+    <div class="field">
+      <label for="rsvp-guests">Quantas pessoas (incluindo você)</label>
+      <select id="rsvp-guests">
+        <option value="1">Só eu</option>
+        <option value="2">2 pessoas</option>
+        <option value="3">3 pessoas</option>
+        <option value="4">4 pessoas</option>
+        <option value="5+">5 ou mais</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="rsvp-msg">Mensagem para o casal (opcional)</label>
+      <textarea id="rsvp-msg" placeholder="Deixe um recadinho, se quiser :)"></textarea>
+    </div>
+
+    <button class="btn" onclick="sendRSVP()">Enviar confirmação pelo WhatsApp</button>
+    <p class="rsvp-msg" id="rsvp-feedback">Preencha ao menos o seu nome para confirmar 🙂</p>
+  </div>
+</section>
+
+<footer>
+  <span class="script">com amor, Vinicius &amp; Mariana</span>
+  <small>feito à mão, pra quem a gente mais quer por perto</small>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
