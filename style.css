@@ -102,6 +102,10 @@
   }
   .scroll-cue .line{width:1px; height:34px; background:var(--gold); animation:pulseline 2s ease-in-out infinite;}
   @keyframes pulseline{0%,100%{opacity:0.3;} 50%{opacity:1;}}
+  @media (max-width:640px){
+    .scroll-cue{display:none;}
+    .hero-content{padding-bottom:6vh;}
+  }
 
   /* ============ INTRO ============ */
   .intro{

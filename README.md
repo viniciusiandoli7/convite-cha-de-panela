@@ -8,7 +8,8 @@ convite-cha-de-casa-nova/
 ├── style.css       → todo o visual (cores, tipografia, layout, animações)
 ├── script.js       → confirmação de presença via WhatsApp + animações de rolagem
 └── assets/
-    ├── hero.jpg       → foto principal (tela inicial)
+    ├── hero.jpg       → colagem de fotos (versão vertical, usada no celular)
+    ├── hero-wide.jpg  → colagem de fotos (versão larga, usada em telas acima de 900px)
     ├── galeria-1.jpg  → foto da galeria (abraço no mirante)
     └── galeria-2.jpg  → foto da galeria (selfie fim de tarde)
 ```
@@ -33,5 +34,5 @@ Está no início do arquivo `script.js`, na constante `WHATSAPP_NUMBER`.
 ## Trocar fotos
 
 Basta substituir os arquivos dentro de `assets/` mantendo os mesmos nomes
-(`hero.jpg`, `galeria-1.jpg`, `galeria-2.jpg`), ou trocar os nomes referenciados
-no `index.html` (procure por `src="assets/...`).
+(`hero.jpg`, `hero-wide.jpg`, `galeria-1.jpg`, `galeria-2.jpg`), ou trocar os
+nomes referenciados no `index.html` (procure por `src="assets/...` e `srcset="assets/...`).
