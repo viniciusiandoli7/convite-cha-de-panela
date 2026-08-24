@@ -1,38 +1,33 @@
 # Convite — Chá de Casa Nova | Vinicius & Mariana
 
-## Estrutura
+Versão atualizada com fluxo de confirmação + presentes via Pix.
 
-```
-convite-cha-de-casa-nova/
-├── index.html      → estrutura da página
-├── style.css       → todo o visual (cores, tipografia, layout, animações)
-├── script.js       → confirmação de presença via WhatsApp + animações de rolagem
-└── assets/
-    ├── hero.jpg       → colagem de fotos (versão vertical, usada no celular)
-    ├── hero-wide.jpg  → colagem de fotos (versão larga, usada em telas acima de 900px)
-    ├── galeria-1.jpg  → foto da galeria (abraço no mirante)
-    └── galeria-2.jpg  → foto da galeria (selfie fim de tarde)
-```
+## Fluxo
+1. O convidado entra no convite.
+2. Confirma nome e número de pessoas.
+3. A página abre automaticamente a etapa de presentes.
+4. O convidado escolhe um presente simbólico ou digita outro valor.
+5. O site gera um Pix com valor preenchido para a chave `41356973809` (Vinicius / Itaú).
+6. Depois do envio, o convidado toca em “Já fiz o Pix” e o presente é registrado no mural.
 
-## Como usar
+## Importante sobre confirmação de pagamento e mural
+Esta versão continua sendo um site estático (HTML/CSS/JS). Por segurança, um navegador não consegue consultar a conta do Itaú para saber se o Pix realmente caiu.
 
-Abra o `index.html` em qualquer navegador — funciona direto, sem precisar de servidor.
+O botão “Já fiz o Pix” registra a DECLARAÇÃO do convidado, não uma confirmação bancária.
 
-Para hospedar (deixar com um link público pra mandar aos convidados), você pode
-arrastar essa pasta inteira em serviços gratuitos como **Netlify Drop**, **Vercel**
-ou **GitHub Pages**.
+Além disso, o mural atual usa `localStorage`, portanto os registros ficam visíveis apenas no navegador/dispositivo que registrou o presente. Para que todos os convidados vejam o mesmo mural em tempo real, é necessário conectar um banco de dados/backend (por exemplo Supabase/Firebase) ou uma API própria. Isso requer credenciais do projeto hospedado e não deve ser embutido sem configuração adequada.
 
-## O que editar quando tiver data e local fechados
+## Personalização pendente
+No `index.html`, procure por `Em breve` para trocar:
+- Data
+- Horário
+- Local
 
-Abra `index.html` e procure por `em breve` (3 ocorrências, dentro da seção
-"Receita para uma casa nova") — troque pela data, horário e endereço reais.
+## Arquivos
+- `index.html` — estrutura e textos
+- `style.css` — design responsivo
+- `script.js` — RSVP, lista de presentes, Pix e mural local
+- `assets/` — imagens originais preservadas
 
-## Número de WhatsApp das confirmações
-
-Está no início do arquivo `script.js`, na constante `WHATSAPP_NUMBER`.
-
-## Trocar fotos
-
-Basta substituir os arquivos dentro de `assets/` mantendo os mesmos nomes
-(`hero.jpg`, `hero-wide.jpg`, `galeria-1.jpg`, `galeria-2.jpg`), ou trocar os
-nomes referenciados no `index.html` (procure por `src="assets/...` e `srcset="assets/...`).
+## Hospedagem
+Pode ser publicado no Netlify, Vercel ou GitHub Pages. Para o QR Code, a página usa o serviço público `api.qrserver.com`; o Pix copia-e-cola é gerado localmente mesmo que o QR externo não carregue.

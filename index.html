@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#2E3B28">
 <title>Vinicius &amp; Mariana — Chá de Casa Nova</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,96 +22,104 @@
     <div class="hero-eyebrow">Chá de casa nova</div>
     <h1 class="hero-names">Vinicius <span class="hero-amp">&amp;</span> Mariana</h1>
     <p class="hero-sub">uma casa nova começa aqui — e queremos vocês nesse dia</p>
+    <a class="hero-cta" href="#confirmar">Confirmar presença</a>
   </div>
-  <div class="scroll-cue"><span>role</span><span class="line"></span></div>
 </section>
 
 <section class="intro reveal">
-  <p>Depois de trilhas, muitas conversas e uma vista que valeu cada subida, decidimos que é hora de montar a nossa própria casa. Achamos que um chá de casa nova era o jeito mais gostoso de comemorar esse começo — com quem a gente ama por perto, com comida boa, e com uma pitada de bagunça também.</p>
+  <p>Depois de tantas histórias juntos, chegou a hora de montar o nosso próprio cantinho. Queremos comemorar esse começo com quem faz parte da nossa vida — com carinho, comida boa e aquela bagunça gostosa de casa cheia.</p>
   <p class="signoff">com muito carinho, Vinicius &amp; Mariana</p>
 </section>
 
-<section class="recipe-wrap reveal">
-  <div class="recipe-card">
-    <div class="recipe-head">
-      <div class="eyebrow recipe-eyebrow">a receita do dia</div>
-      <h2 class="recipe-title">Receita para uma casa nova</h2>
-    </div>
-    <div class="recipe-cols">
-      <div class="recipe-col">
-        <h3>Ingredientes</h3>
-        <ul class="ing-list">
-          <li>1 casal apaixonado (nós, no capricho)</li>
-          <li class="placeholder">Data: em breve 💛</li>
-          <li class="placeholder">Horário: em breve</li>
-          <li class="placeholder">Endereço: em breve</li>
-          <li>Uma pitada generosa de bom humor</li>
-          <li>Muito carinho de quem estiver por perto</li>
-        </ul>
-      </div>
-      <div class="recipe-divider"></div>
-      <div class="recipe-col">
-        <h3>Modo de preparo</h3>
-        <ol class="prep-list">
-          <li>Confirme sua presença logo abaixo, pelo WhatsApp</li>
-          <li>Dê uma olhada na nossa lista de presentes, pra ninguém repetir o mesmo presente</li>
-          <li>No dia combinado, é só chegar com vontade de comemorar com a gente</li>
-        </ol>
-      </div>
+<section class="event-card-wrap reveal">
+  <div class="event-card">
+    <div class="eyebrow">o nosso encontro</div>
+    <h2>Chá de casa nova</h2>
+    <div class="event-grid">
+      <div><span>Data</span><strong>03/10/2026 · sábado</strong></div>
+      <div><span>Horário</span><strong>14h</strong></div>
+      <div><span>Local</span><strong><a class="location-link" href="https://www.google.com/maps/place/Condom%C3%ADnio+Edif%C3%ADcio+Sardenha+-+R.+En%C3%A9as+de+Barros,+425+-+Penha+de+Fran%C3%A7a,+S%C3%A3o+Paulo+-+SP,+03613-000/data=!4m2!3m1!1s0x94ce5e364270e2e9:0xe67a758c2f35c19f?sa=X&ved=1t:242&ictx=111" target="_blank" rel="noopener noreferrer">Rua Enéas de Barros, 425 ↗</a></strong></div>
     </div>
   </div>
 </section>
 
 <section class="gallery reveal">
-  <div class="eyebrow">registros</div>
-  <h2>de onde viemos até aqui</h2>
-  <p class="lead">Um pouco do caminho — entre montanhas, luz de fim de tarde e a vontade de construir algo nosso.</p>
+  <div class="eyebrow">nossos momentos</div>
+  <h2>estamos preparando esse dia com muito carinho,<br>contamos com a sua presença</h2>
   <div class="gallery-grid">
     <figure class="frame tall">
-      <img src="assets/galeria-1.jpg" alt="Vinicius e Mariana abraçados em um mirante nas montanhas">
+      <img src="assets/galeria-1.jpg" alt="Vinicius e Mariana abraçados em um mirante nas montanhas" loading="lazy">
       <figcaption>lá do alto</figcaption>
     </figure>
     <figure class="frame right">
-      <img src="assets/galeria-2.jpg" alt="Selfie de Vinicius e Mariana no fim de tarde, com o céu ao fundo">
+      <img src="assets/galeria-2.jpg" alt="Selfie de Vinicius e Mariana no fim de tarde" loading="lazy">
       <figcaption>fim de tarde, sempre juntos</figcaption>
     </figure>
   </div>
 </section>
 
-<section class="gifts reveal">
-  <div class="eyebrow">lista de presentes</div>
-  <h2>ajude a melhorar essa casinha</h2>
-  <p>Organizamos tudo na Amazon. Quando alguém marca um item como comprado, ele some da lista pros outros — assim ninguém compra o mesmo presente duas vezes sem querer.</p>
-  <a class="btn" href="https://www.amazon.com.br/hz/wishlist/ls/UZTMXAYRSNF3?type=wishlist" target="_blank" rel="noopener">Ver lista na Amazon ↗</a>
+<section class="rsvp reveal" id="confirmar">
+  <div class="rsvp-inner">
+    <div class="step-badge">1 de 2</div>
+    <div class="eyebrow">presença</div>
+    <h2>você vem comemorar com a gente?</h2>
+    <p>Confirme seu nome por aqui para sabermos que vamos te esperar nesse dia especial 🤍</p>
+
+    <form id="rsvp-form" novalidate>
+      <div class="field">
+        <label for="rsvp-name">Seu nome</label>
+        <input type="text" id="rsvp-name" autocomplete="name" placeholder="Seu nome e sobrenome" required>
+      </div>
+      <div class="field">
+        <label for="rsvp-msg">Recadinho para nós <em>(opcional)</em></label>
+        <textarea id="rsvp-msg" placeholder="Deixe um carinho, se quiser :)" maxlength="280"></textarea>
+      </div>
+      <button class="btn full" type="submit">Continuar →</button>
+      <p class="form-feedback" id="rsvp-feedback" aria-live="polite"></p>
+    </form>
+  </div>
 </section>
 
-<section class="rsvp reveal" id="rsvp">
-  <div class="rsvp-inner">
-    <div class="eyebrow">presença</div>
-    <h2>confirme com a gente</h2>
-    <p>Preencha os campos abaixo — ao enviar, vamos abrir o WhatsApp com sua confirmação já escrita, prontinha pra você só apertar enviar.</p>
+<section class="gift-flow" id="presentes" hidden>
+  <div class="gift-inner">
+    <div class="step-badge">2 de 2</div>
+    <div class="eyebrow">nosso cantinho</div>
+    <h2 id="gift-title">Só mais um detalhe 🤍</h2>
+    <p class="gift-intro">Para completar sua confirmação, escolha um presente simbólico para o nosso cantinho. Assim, além de comemorar com a gente, você também faz parte desse novo começo.</p>
 
-    <div class="field">
-      <label for="rsvp-name">Seu nome</label>
-      <input type="text" id="rsvp-name" placeholder="Como podemos te chamar?">
-    </div>
-    <div class="field">
-      <label for="rsvp-guests">Quantas pessoas (incluindo você)</label>
-      <select id="rsvp-guests">
-        <option value="1">Só eu</option>
-        <option value="2">2 pessoas</option>
-        <option value="3">3 pessoas</option>
-        <option value="4">4 pessoas</option>
-        <option value="5+">5 ou mais</option>
-      </select>
-    </div>
-    <div class="field">
-      <label for="rsvp-msg">Mensagem para o casal (opcional)</label>
-      <textarea id="rsvp-msg" placeholder="Deixe um recadinho, se quiser :)"></textarea>
+    <div class="gift-grid" id="gift-grid"></div>
+
+    <div class="custom-gift">
+      <label for="custom-value">Ou escolha outro valor</label>
+      <div class="money-input"><span>R$</span><input id="custom-value" inputmode="decimal" placeholder="0,00"></div>
+      <button class="btn secondary full" type="button" id="custom-gift-btn">Presentear com outro valor</button>
     </div>
 
-    <button class="btn" onclick="sendRSVP()">Enviar confirmação pelo WhatsApp</button>
-    <p class="rsvp-msg" id="rsvp-feedback">Preencha ao menos o seu nome para confirmar 🙂</p>
+  </div>
+</section>
+
+
+
+<section class="final-confirmation" id="confirmacao-final" hidden>
+  <div class="final-confirmation-inner">
+    <div class="eyebrow">tudo certo</div>
+    <h2 id="final-title">Presença confirmada 🤍</h2>
+    <p>Agora sim! Vamos ficar muito felizes em ter você com a gente nesse dia especial.</p>
+  </div>
+</section>
+
+<section class="guest-list reveal" id="confirmados">
+  <div class="guest-list-inner">
+    <div class="eyebrow">presenças confirmadas</div>
+    <h2>Quem já confirmou 🤍</h2>
+    <p class="guest-list-intro">Vai ser muito especial ter vocês com a gente.</p>
+    <div class="guest-count" id="guest-count" aria-live="polite">
+      <span class="guest-count-number">0</span>
+      <span class="guest-count-label">pessoas confirmadas</span>
+    </div>
+    <div class="confirmed-list" id="confirmed-list">
+      <p class="confirmed-empty">As confirmações vão aparecer por aqui.</p>
+    </div>
   </div>
 </section>
 
@@ -119,7 +128,36 @@
   <small>feito à mão, pra quem a gente mais quer por perto</small>
 </footer>
 
-<script src="script.js"></script>
+<div class="modal-backdrop" id="pix-modal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="pix-modal-title">
+    <button class="modal-close" type="button" id="modal-close" aria-label="Fechar">×</button>
+    <div class="eyebrow">seu presente</div>
+    <h2 id="pix-modal-title">Fazer Pix</h2>
+    <p class="modal-summary" id="pix-summary"></p>
 
+    <div class="pix-box">
+      <img id="pix-qr" alt="QR Code Pix" width="220" height="220">
+      <div class="pix-recipient">
+        <span>Recebedor</span><strong>Vinicius • Itaú</strong>
+      </div>
+      <div class="pix-recipient">
+        <span>Chave Pix</span><strong>413.569.738-09</strong>
+      </div>
+      <button class="btn full" type="button" id="copy-pix">Copiar Pix copia e cola</button>
+      <p class="copy-feedback" id="copy-feedback"></p>
+    </div>
+
+    <div class="payment-confirm">
+      <h3>Para finalizar</h3>
+      <p>Depois de concluir o Pix no seu banco, confirme abaixo para finalizar sua presença.</p>
+      <label class="payment-check"><input type="checkbox" id="payment-check"> <span>Confirmo que realizei o Pix acima</span></label>
+      <button class="btn secondary full" type="button" id="mark-paid" disabled>Finalizar confirmação ✓</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
 </body>
 </html>
